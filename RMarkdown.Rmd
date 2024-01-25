@@ -36,8 +36,8 @@ Plot your data
 ```{r, fig.cap= "My Data Plotted"}
 # generating plot 
 ggplot(MyData, aes(x = x, y = y, colour = z)) + 
-  geom_point(size = 1, shape = "triangle") + 
-  theme_bw() 
+  geom_point(size = 4, shape = "square") + 
+  theme_bw()
 
 ```
 
