@@ -40,8 +40,9 @@ ggplot(MyData, aes(x = x, y = y)) +
 
 ```
 
+Thank you 
 
-("Happy Tortoise.jpg")
+![Alt text](https://assets.digitalocean.com/articles/alligator/boo.svg "a title")
 
 
 
