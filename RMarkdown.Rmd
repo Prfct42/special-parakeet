@@ -8,24 +8,25 @@ date: "2024-01-25"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# My Frist Projects
-Write any comments! Without using # 
 
-## I love Snakes 
-### But I love geckos more
-
-Comment outside box 
 
 ```{r}
 # Comment inside box
 x <- rnorm(100, 0, 1)
 y <- rnorm(100,2,3)
+
+library(ggplot2)
+library(dplyr)
+
+MyData <- data.frame(x, y)
+glimpse(MyData)
+
+ggplot(MyData, aes(x = x, y = y)) + 
+  geom_point(colour = "blue") + 
+  theme_bw() 
+
 ```
 
-```{r, fig.cap = "graph"}
-# make the plot
-plot(x ~ y)
-```
 
 
 
