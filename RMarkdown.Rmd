@@ -47,6 +47,11 @@ model1 <- lm(x ~ y, data = MyData)
 model1
 ```
 
+```{r}
+# Anova table 
+anova(model1)
+```
+
 Thank you 
 
 ![A lovely giant tortoise](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/A._gigantea_Aldabra_Giant_Tortoise.jpg/1200px-A._gigantea_Aldabra_Giant_Tortoise.jpg) 
