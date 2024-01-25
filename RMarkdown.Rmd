@@ -24,9 +24,10 @@ Generate your data
 # generating data
 x <- rnorm(100, 0, 1)
 y <- rnorm(100,2,3)
+z <- rnorm(100, 5, 1)
 
 # generating data frame 
-MyData <- data.frame(x, y)
+MyData <- data.frame(x, y, z)
 glimpse(MyData)
 ```
 
@@ -34,8 +35,8 @@ Plot your data
 
 ```{r, fig.cap= "My Data Plotted"}
 # generating plot 
-ggplot(MyData, aes(x = x, y = y)) + 
-  geom_point(colour = "pink") + 
+ggplot(MyData, aes(x = x, y = y, colour = z)) + 
+  geom_point() + 
   theme_bw() 
 
 ```
