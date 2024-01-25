@@ -8,19 +8,23 @@ date: "2024-01-25"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Creating a Plot
 
 
 ```{r}
-# Comment inside box
-x <- rnorm(100, 0, 1)
-y <- rnorm(100,2,3)
-
+# library 
 library(ggplot2)
 library(dplyr)
 
+# generating data
+x <- rnorm(100, 0, 1)
+y <- rnorm(100,2,3)
+
+# generating data frame 
 MyData <- data.frame(x, y)
 glimpse(MyData)
 
+# generating plot 
 ggplot(MyData, aes(x = x, y = y)) + 
   geom_point(colour = "blue") + 
   theme_bw() 
