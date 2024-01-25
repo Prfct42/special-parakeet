@@ -1,0 +1,32 @@
+---
+title: "My First RMarkdown"
+output: html_document
+date: "2024-01-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# My Frist Projects
+Write any comments! Without using # 
+
+## I love Snakes 
+### But I love geckos more
+
+Comment outside box 
+
+```{r}
+# Comment inside box
+x <- rnorm(100, 0, 1)
+y <- rnorm(100,2,3)
+```
+
+```{r, fig.cap = "graph"}
+# make the plot
+plot(x ~ y)
+```
+
+
+
+
