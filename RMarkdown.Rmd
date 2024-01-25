@@ -18,6 +18,8 @@ library(dplyr)
 
 ```
 
+Generate your data 
+
 ```{r}
 # generating data
 x <- rnorm(100, 0, 1)
@@ -26,7 +28,9 @@ y <- rnorm(100,2,3)
 # generating data frame 
 MyData <- data.frame(x, y)
 glimpse(MyData)
+```
 
+```{r, fig.cap= "My Data Plotted"}
 # generating plot 
 ggplot(MyData, aes(x = x, y = y)) + 
   geom_point(colour = "blue") + 
