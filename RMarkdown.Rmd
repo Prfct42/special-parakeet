@@ -30,6 +30,8 @@ MyData <- data.frame(x, y)
 glimpse(MyData)
 ```
 
+Plot your data 
+
 ```{r, fig.cap= "My Data Plotted"}
 # generating plot 
 ggplot(MyData, aes(x = x, y = y)) + 
